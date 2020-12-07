@@ -6,8 +6,8 @@ function CardInfo(props) {
 
     return(
         <animated.div className="g-card-info" style={style}>
-            <p className="g-card-title">{props.title}</p>
-            <p className="g-card-sub-title">{props.subTitle}</p>
+            <p className="g-card-title lead font-weight-bold">{props.title}</p>
+            <p className="g-card-sub-title text-white lead font-weight-normal">{props.subTitle}</p>
         </animated.div>
     )
 }

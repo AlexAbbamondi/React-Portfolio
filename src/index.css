@@ -5,11 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E8CEBF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.navBar, footer {
+  background-color: #FDF8F5;
+}
+
+.footer:hover {
+  background-color: #266150;
+  padding: 5px;
+  color: white; 
+  text-decoration: none;
+}
+
+.brand, .brand:hover  {
+  color: #4F4846;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text {
+  color: #4F4846;
+}
+
+.text:hover {
+  background-color: #266150;
+  color: white; 
 }
 
 .g-card {
@@ -21,6 +48,7 @@ code {
   width: 300px;
   height: 480px;
   box-shadow: 0px 0px 3px 1px #ccc;
+  cursor: pointer;
 }
 
 .g-card-info {
@@ -35,9 +63,67 @@ code {
   font-size: 24px;
   margin: 0px;
   text-align: center;
+  color: #266150;
 }
 
 .g-card-sub-title {
   font-size: 16px;
   margin: 0px;
+}
+
+.cursive {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 36px;
+  color: white;
+}
+
+.lead {
+  color: #266150;
+}
+
+.author {
+  font-size: 30px;
+  color: #266150;
+}
+
+.footer {
+  color: #4F4846;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+  background-color: #266150;
+}
+
+.button:hover {
+  background-color: #4F4846;
+}
+
+.button-portfolio {
+  background-color: #4F4846;
+}
+
+.pricing-header {
+  background-color: #266150;
+}
+
+.pricing-title {
+  color: #4F4846;
+}
+.modal-header {
+  background-color: #4F4846;
+}
+
+.footer-color {
+  color: #266150;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #4F4846;
+  margin: 6px 0;
 }
