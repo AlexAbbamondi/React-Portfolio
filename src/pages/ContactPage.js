@@ -72,12 +72,12 @@ class ContactPage extends React.Component{
                     <Form className="mb-5 mr-5 ml-5" onSubmit={values => this.handleSubmit(values)}>
                         <FormGroup>
                             <Label htmlFor="name">Full Name</Label>
-                            <Input id="name" name="name" type="text" value={this.state.name} invalid={errors.name} onChange={this.handleChange} onBlur={this.handleBlur("name")}/>
+                            <Input id="name" name="name" type="text" placeholder="Full Name" value={this.state.name} invalid={errors.name} onChange={this.handleChange} onBlur={this.handleBlur("name")}/>
                             <FormFeedback>{errors.name}</FormFeedback>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="email">Email</Label>
-                            <Input id="email" name="email" type="email" value={this.state.email} invalid={errors.email} onChange={this.handleChange} onBlur={this.handleBlur("email")}/>
+                            <Input id="email" name="email" type="email" placeholder="Email" value={this.state.email} invalid={errors.email} onChange={this.handleChange} onBlur={this.handleBlur("email")}/>
                             <FormFeedback>{errors.email}</FormFeedback>
                         </FormGroup>
                         <FormGroup>
