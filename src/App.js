@@ -1,6 +1,6 @@
 import React from "react"
-import {BrowserRouter as Router, Route, Link} from "react-router-dom"
-import {Container, Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, Button, Modal, ModalBody, ModalHeader, Row} from "reactstrap"
+import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
+import {Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, Button, Modal, ModalBody, ModalHeader, Row} from "reactstrap"
 import './App.css';
 
 import Footer from "./components/Footer.js"
@@ -79,11 +79,13 @@ class App extends React.Component {
                 </div>
             </Navbar>
          
+          <Switch>
+            <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
+            <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+            <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
+            <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          </Switch>
 
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
-          <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
-          <Route path="/portfolio" render={() => <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
 
           {/* popup modal for pricing */}
           <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
